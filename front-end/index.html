@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validador de CNPJ com Axios</title>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Validador de CNPJ</h1>
+        <form class="form" onsubmit="validarCNPJ(event, this);">
+            <div class="row">
+                <div class="form-group">
+                    <input autofocus autocomplete="off" class="form-data" id="cnpj" maxlength="14" name="cnpj" 
+                           pattern="([\d]{14})" placeholder="Digite o CNPJ aqui" required type="text">
+                    <span class="form-requirement">* Informe apenas os números.</span>
+                </div>
+            </div>
+            <div>
+                <button type="submit">Validar CNPJ</button>
+            </div>
+        </form>
+    </main>
+    <script src="assets/js/axios.min.js" type="text/javascript"></script>
+    <script src="assets/js/index.js" type="text/javascript"></script>
+</body>
+</html>
